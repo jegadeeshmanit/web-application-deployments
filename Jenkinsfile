@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout Code from GitHub') {
             steps {
                 // Checkout code from GitHub
-                git credentialsId: 'git-cred', url: 'https://github.com/jegadeeshmani86-Webapp.git', branch: 'main'
+                git credentialsId: 'git-cred', url: 'https://github.com/jegadeeshmanit/web-application-deployments.git', branch: 'main'
             }
         }
         stage('Build WAR with Maven') {
